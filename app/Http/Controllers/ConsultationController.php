@@ -14,7 +14,7 @@ class ConsultationController extends Controller
      */
     public function index()
     {
-        //
+        ddd('this is index');
     }
 
     /**
@@ -24,7 +24,7 @@ class ConsultationController extends Controller
      */
     public function create()
     {
-        //
+        ddd('this is create');
     }
 
     /**

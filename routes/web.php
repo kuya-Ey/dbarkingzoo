@@ -1,4 +1,3 @@
-web.php
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -47,3 +46,7 @@ Route::get('/grooming_service', [GroomingServiceController::class, 'store']);
 Route::get('/pet_boardings', [PetBoardingController::class, 'index']);
 Route::get('/pet_boarding/', [PetBoardingController::class, 'create']);
 Route::get('/pet_boarding', [PetBoardingController::class, 'store']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

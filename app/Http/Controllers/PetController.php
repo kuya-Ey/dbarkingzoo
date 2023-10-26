@@ -15,7 +15,7 @@ class PetController extends Controller
      */
     public function index()
     {
-        //
+        ddd('this is index');
     }
 
     /**
@@ -25,7 +25,7 @@ class PetController extends Controller
      */
     public function create()
     {
-        //
+        ddd('this is create');
     }
 
     /**
