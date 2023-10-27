@@ -9,10 +9,10 @@
 
 body {
     display: flex;
-    width: 300vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    /* width: 100vw;
+    height: 100vh; */
+    /* align-items: center;
+    justify-content: center; */
     font-family: 'Poppins', sans-serif;
     background: #D1E8E2;
     background-image: url('/images/landingpage.png');
@@ -21,7 +21,6 @@ body {
 }
 
 .container {
-    width: 100vw;
     height: 100%;
 }
 
