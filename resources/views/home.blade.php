@@ -19,11 +19,10 @@
             </div>
         </div>
     </div>
-</div>
 
 <div class="cards">
     <div class="cards-details">
-      <p class="text-title">Card Title</p>
+        <img src="" alt="">
       <p class="text-body">Card Details</p>
     </div>
     <a class="cards-button" href="/consultation">Consultation</a>
@@ -49,6 +48,10 @@
     </div>
     <a class="cards-button" href="/pet_boarding">Pet Boarding</a>
   </div>
-
-
+</div>
+<footer>
+<div class="footcontainer">
+    <p>Hello World</p>
+</div>
+</footer>
 @endsection

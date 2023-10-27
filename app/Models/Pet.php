@@ -10,4 +10,15 @@ class Pet extends Model
     use HasFactory;
 
     protected $table = 'pets';
+
+    protected $fillable = [
+        'name',
+        'age',
+        'weight',
+        'breed',
+        'remarks'
+    ];
+
+    public $timestamps = false;
+    
 }

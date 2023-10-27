@@ -10,4 +10,19 @@ class Product extends Model
     use HasFactory;
 
     protected $table = 'products';
+
+    public $timestamps = false;
+
+    protected $attributes = [
+        'image' => 'public/images/noimagefound.jpg'
+    ];
+
+    protected $fillable = [
+        'name',
+        'description',
+        'quantity',
+        'price',
+        'category',
+        'images'
+    ];
 }

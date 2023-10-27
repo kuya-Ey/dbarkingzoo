@@ -1,10 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ConsultationController;
-use App\Http\Controllers\PetBoardingController;
-use App\Http\Controllers\GroomingServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,36 +13,11 @@ use App\Http\Controllers\GroomingServiceController;
 |
 */
 
-Auth::routes(['verify' => true]);
-
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('verified');
-
-Route::get('/', function(){
+Route::get('/', function () {
     return view('auth.login');
 });
 
-// routes for products table
-Route::get('/products', [ProductController::class, 'index']);
-Route::get('/product/{id}', [ProductController::class, 'show']);
-Route::get('/product/', [ProductController::class, 'create']);
-Route::get('/product/{id}/edit',[ProductController::class,'edit']);
+Auth::routes(['verify' => true]);
 
-Route::post('/product',[ProductController::class,'store']);
-Route::put('/product/{id}/edit',[ProductController::class,'update']);
-Route::delete('/product/{id}',[ProductController::class,('destroy')]);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('verified');
 
-Route::get('/consultations', [ConsultationController::class, 'index']);
-Route::get('/consultation/', [ConsultationController::class, 'create']);
-Route::get('/consultation', [ConsultationController::class, 'store']);
-
-Route::get('/grooming_services', [GroomingServiceController::class, 'index']);
-Route::get('/grooming_service/', [GroomingServiceController::class, 'create']);
-Route::get('/grooming_service', [GroomingServiceController::class, 'store']);
-
-Route::get('/pet_boardings', [PetBoardingController::class, 'index']);
-Route::get('/pet_boarding/', [PetBoardingController::class, 'create']);
-Route::get('/pet_boarding', [PetBoardingController::class, 'store']);
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
