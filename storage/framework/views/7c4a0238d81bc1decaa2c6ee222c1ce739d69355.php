@@ -1,9 +1,13 @@
 <?php $__env->startSection('content'); ?>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Enter
 </button>
-
+<br>
+<br>
+<div>
+<a class="btn btn-info" href="<?php echo e(route('register')); ?>" role="button">Sign Up</a>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -102,11 +106,6 @@ unset($__errorArgs, $__bag); ?>
             </div>
         </form>
       </div>
-      
-    </div>
-  </div>
-</div>
-
 
 <?php $__env->stopSection(); ?>
 
