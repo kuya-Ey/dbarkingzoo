@@ -14,7 +14,7 @@ class PetBoardingController extends Controller
      */
     public function index()
     {
-        //
+        ddd(index);
     }
 
     /**
@@ -24,7 +24,7 @@ class PetBoardingController extends Controller
      */
     public function create()
     {
-        //
+        ddd(create);
     }
 
     /**

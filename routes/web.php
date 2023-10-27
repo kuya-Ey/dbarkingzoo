@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ConsultationController;
+use App\Http\Controllers\GroomingServiceController;
+use App\Http\Controllers\PetBoardingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,3 +64,4 @@ Route::get('/pet_boarding/{id}/edit',[ProductController::class, 'edit'])->middle
 Route::post('/pet_boarding',[ProductController::class, 'store'])->middleware('verified');
 Route::put('/pet_boarding/{id}/edit',[ProductController::class, 'update'])->middleware('verified');
 Route::delete('/pet_boarding/{id}',[ProductController::class, 'destroy'])->middleware('verified');
+
