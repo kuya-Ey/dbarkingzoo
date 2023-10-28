@@ -24,7 +24,12 @@ body {
     height: 100%;
 }
 
-  .cards {
+.login {
+    position: fixed;
+    bottom: 50px;
+
+}
+  /* .cards {
     width: 190px;
     height: 254px;
     border-radius: 20px;
@@ -70,16 +75,16 @@ body {
 
   .text-body {
     color: rgb(134, 134, 134);
-  }
+  } */
 
   /*Text*/
-  .text-title {
+  /* .text-title {
     font-size: 1.5em;
     font-weight: bold;
-  }
+  } */
 
   /*Hover*/
-  .cards:hover {
+  /* .cards:hover {
     border-color:  #19747E;
     -webkit-box-shadow: 10px 5px 18px 0 rgba(255, 255, 255, 0.877);
     box-shadow: 10px 5px 18px 0 rgba(255, 255, 255, 0.877);
@@ -90,4 +95,4 @@ body {
     -ms-transform: translate(-50%, 50%);
     transform: translate(-50%, 50%);
     opacity: 1;
-  }
+  }  */

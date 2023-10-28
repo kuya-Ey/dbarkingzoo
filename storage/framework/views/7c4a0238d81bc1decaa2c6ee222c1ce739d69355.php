@@ -1,12 +1,15 @@
 <?php $__env->startSection('content'); ?>
+<div class="login">
 <!-- Button trigger modal -->
+<div class="mb-3">
 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Enter
 </button>
-<br>
-<br>
-<div>
+</div>
+
+<div class="mb-3">
 <a class="btn btn-info" href="<?php echo e(route('register')); ?>" role="button">Sign Up</a>
+</div>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
