@@ -2,7 +2,7 @@
 <div class="login">
 <!-- Button trigger modal -->
 <div class="mb-3">
-<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Enter
 </button>
 </div>
